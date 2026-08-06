@@ -1,1 +1,73 @@
+/* ================================================= */
+/* 1. تنسيق عمود المقال (البطاقة المركزية) */
+/* ================================================= */
+.post-body, .shadow-article {
+    max-width: 850px !important; /* عرض متناسق جداً للقراءة */
+    margin: 30px auto !important; /* توسيط العمود في منتصف الصفحة */
+    padding: 30px 40px !important; /* مسافات داخلية لحماية النص */
+    background-color: #ffffff !important; 
+    line-height: 1.8 !important;   /* تباعد أسطر مريح كما طلبت */
+    font-size: 17px !important;    /* حجم الخط الذي اخترته */
+    color: #333 !important; 
+    text-align: justify !important; /* جعل النص متناسق ومنتظم من الجانبين */
+    text-justify: inter-word;
+    border: 1px solid #ddd; 
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08); 
+    border-radius: 6px; 
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+/* ================================================= */
+/* 2. تنسيق بطاقات تصفح المقالات (أسفل العناوين) */
+/* ================================================= */
+/* هذا الجزء يغير شكل المقالات في الصفحة الرئيسية وصفحات الأقسام */
+.post-outer, .index-post, .item-post {
+    background: #ffffff !important;
+    border-radius: 12px !important;
+    padding: 20px !important;
+    margin-bottom: 25px !important;
+    border: 1px solid #eee !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03) !important;
+    transition: transform 0.3s ease;
+}
+
+.post-outer:hover {
+    transform: translateY(-5px); /* حركة خفيفة عند مرور الماوس */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.07) !important;
+}
+
+/* ================================================= */
+/* 3. تحسين العناوين (لتبرز كبطاقة حمراء خفيفة) */
+/* ================================================= */
+.post-body h2, .post-body h3 {
+    color: #b91c1c !important; /* اللون الأحمر الفخم */
+    font-weight: bold !important;
+    margin-top: 35px !important;
+    margin-bottom: 15px !important;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+/* ================================================= */
+/* 4. تنسيق الصور (عادية وطبيعية) */
+/* ================================================= */
+.post-body img {
+    max-width: 100% !important;
+    height: auto !important;
+    border-radius: 0px !important; /* صور حادة الزوايا كما طلبت */
+    margin: 25px auto !important;
+    display: block;
+}
+
+/* ================================================= */
+/* 5. تحسين الجوال */
+/* ================================================= */
+@media (max-width: 768px) {
+    .post-body {
+        width: 95% !important;
+        padding: 20px !important;
+        font-size: 16px !important;
+    }
+}
 
