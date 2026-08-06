@@ -6,11 +6,10 @@
     margin: 30px auto !important; /* توسيط العمود في منتصف الصفحة */
     padding: 30px 40px !important; /* مسافات داخلية لحماية النص */
     background-color: #ffffff !important; 
-    line-height: 1.8 !important;   /* تباعد أسطر مريح كما طلبت */
-    font-size: 17px !important;    /* حجم الخط الذي اخترته */
+    line-height: 1.8 !important;   /* تباعد أسطر مريح */
+    font-size: 17px !important;    /* حجم الخط */
     color: #333 !important; 
-    text-align: justify !important; /* جعل النص متناسق ومنتظم من الجانبين */
-    text-justify: inter-word;
+    text-align: right !important; /* محاذاة النص لليمين لمنع تباعد الكلمات المزعج */
     border: 1px solid #ddd; 
     box-shadow: 0 3px 8px rgba(0,0,0,0.08); 
     border-radius: 6px; 
@@ -21,7 +20,6 @@
 /* ================================================= */
 /* 2. تنسيق بطاقات تصفح المقالات (أسفل العناوين) */
 /* ================================================= */
-/* هذا الجزء يغير شكل المقالات في الصفحة الرئيسية وصفحات الأقسام */
 .post-outer, .index-post, .item-post {
     background: #ffffff !important;
     border-radius: 12px !important;
@@ -55,7 +53,7 @@
 .post-body img {
     max-width: 100% !important;
     height: auto !important;
-    border-radius: 0px !important; /* صور حادة الزوايا كما طلبت */
+    border-radius: 0px !important; /* صور حادة الزوايا */
     margin: 25px auto !important;
     display: block;
 }
@@ -70,4 +68,3 @@
         font-size: 16px !important;
     }
 }
-
